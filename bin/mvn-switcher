@@ -1,0 +1,16 @@
+#!/bin/env bash
+# -*- mode: shell-script-mode; -*-
+
+repo=`git config --get project.mvn.repo`
+
+if [ "$repo"x != "x" ]
+then
+  echo "Using repo for project $repo"
+  settings=$HOME/.m2-$repo/settings.xml
+  echo "Using settings file $settings"
+  $MAVEN_HOME/bin/mvn -s "$settings" $*
+else
+  echo "Using defaults"
+  $MAVEN_HOME/bin/mvn -s $HOME/.m2/settings.xml $*
+fi
+
