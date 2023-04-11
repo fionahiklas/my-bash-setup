@@ -4,7 +4,7 @@
 ## Overview
 
 I keep having to hack PATH and other bits and pieces in bash so that I can develop for 
-Ruby, node and other languages.  
+Ruby, node and other languages.
 
 I found some links that explain how to make things more reusable without constant `.bashrc` file
 hacking.
