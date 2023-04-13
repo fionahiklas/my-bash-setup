@@ -18,6 +18,6 @@ echo "Adding coursier into path"
 export COURSIER_HOME=$HOME/tools/coursier
 
 pathappend $COURSIER_HOME/bin
-pathappend $HOME/Library/Application\ Support/Coursier/bin
+pathappend $HOME/.local/share/coursier/bin
 
 
